@@ -1,5 +1,12 @@
 # Commands
 
+# Create Kubernetes cluster and set context
+
+1. `k3d cluster create -a 2`
+2. `kubectl config use-context k3d-k3s-default`
+
+to stop and start run `k3d cluster <stop/start>` or to delete `k3d cluster delete`
+
 ## Build image
 
 `docker build -t log-output .`

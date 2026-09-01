@@ -1,3 +1,5 @@
-# Devops with kubernetes course's submissions
+# Devops with kubernetes course submissions
 
 ## Exercises
+
+### Chapter 2
