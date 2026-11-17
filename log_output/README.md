@@ -1,4 +1,4 @@
-# Commands
+# 1.1 Commands
 
 # Create Kubernetes cluster and set context
 
@@ -25,3 +25,15 @@ to stop and start run `k3d cluster <stop/start>` or to delete `k3d cluster delet
 
 1. `kubectl get pods`
 2. `kubectl logs -f <pod>`
+
+# 1.3 Declarative approach
+
+First I checked that the old deployment does not exist:
+
+`kubectl get deployments`
+
+And then apply the deployment:
+
+`kubectl apply -f manifests/deployment.yaml`
+
+Checked that the logger still works using commands under "Check logs".
