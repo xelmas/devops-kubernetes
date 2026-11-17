@@ -1,4 +1,4 @@
-# Todo app server
+# 1.2 Todo app server
 
 The server is a simple express app that is implemented by following the [Fullstack part 3 material](https://fullstackopen.com/osa3/node_js_ja_express#yksinkertainen-web-palvelin).
 
@@ -41,3 +41,15 @@ I tested that the image works and prints (Server started in port NNNN) locally u
 2. `kubectl logs -f <pod>`
 
 Logs printed "Server started in port 3001".
+
+# 1.4 Declarative approach
+
+Delete the existing deployment:
+
+`kubectl delete deployment todo-app-dep`
+
+And then apply the deployment:
+
+`kubectl apply -f manifests/deployment.yaml`
+
+Checked that everything still works using commands under "Check logs".
